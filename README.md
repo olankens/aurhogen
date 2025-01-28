@@ -6,6 +6,8 @@
 
 # <samp>GUIDANCE</samp>
 
+### Launch the script
+
 Blindly executing this is strongly discouraged.
 
 ```shell
