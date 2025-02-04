@@ -1,6 +1,6 @@
 # <samp>OVERVIEW</samp>
 
-[Kobo Aura](https://wikipedia.org/wiki/Kobo_Aura) automatic setup for hackers.
+[Kobo Aura](https://wikipedia.org/wiki/Kobo_Aura) automatic setup for hoarders.
 
 <img src="assets/img1.png" width="49.25%"/><img src="assets/img0.png" width="1.5%"/><img src="assets/img2.png" width="49.25%"/>
 
