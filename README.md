@@ -1,8 +1,10 @@
 <hr>
 
-# <samp>AURHOGEN</samp>
-
-[Kobo Aura](https://wikipedia.org/wiki/Kobo_Aura) automatic setup for hoarders.
+<div align="center">
+  <img src=".assets/icon.svg" width="132">
+  <h1><samp>AURHOGEN</samp></h1>
+  <p><a href="https://wikipedia.org/wiki/Kobo_Aura">Kobo Aura</a> automatic setup for hoarders.</p>
+</div>
 
 <hr>
 
