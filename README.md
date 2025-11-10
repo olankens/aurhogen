@@ -1,10 +1,8 @@
 <hr>
 
-<div align="center">
-  <img src=".assets/icon.svg" width="128">
-  <h1><samp>AURHOGEN</samp></h1>
-  <p><a href="https://wikipedia.org/wiki/Kobo_Aura">Kobo Aura</a> automatic setup for hoarders.</p>
-</div>
+# <samp>AURHOGEN</samp>
+
+[Kobo Aura](https://wikipedia.org/wiki/Kobo_Aura) automatic setup for hoarders.
 
 <hr>
 
@@ -15,8 +13,6 @@
 <hr>
 
 ### Launch Script
-
-Blindly executing this is strongly discouraged.
 
 ```shell
 /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/olankens/aurhogen/HEAD/src/aurhogen.sh)"
