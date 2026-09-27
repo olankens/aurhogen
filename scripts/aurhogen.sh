@@ -21,7 +21,7 @@ ensure_accuracy() {
 		printf "$failure" "THE ACTUAL SYSTEM IS NOT SUPPORTED." && exit 1
 	elif [[ ! -d $(access_external) ]]; then
 		printf "$failure" "THE SCRIPT DID NOT FIND THE DEVICE." && exit 1
-	elif [[ -z $(command -v curl) || -z $(command -v jq) || -z $(command -v sqlite3) ]]; then
+	elif [[ -z $(command -v curl) || -z $(command -v jq) ]]; then
 		printf "$failure" "THE DEPENDENCIES ARE NOT INSTALLED." && exit 1
 	fi
 
@@ -35,23 +35,6 @@ remove_unwanted() {
 		rm -fr "$storage/.Spotlight-V100"
 		rm -fr "$storage/.Trashes"
 		rm -fr "$storage/System Volume Information"
-	fi
-
-}
-
-update_database() {
-
-	local storage="$(access_external)/.kobo/KoboReader.sqlite"
-	if [[ -f $storage ]]; then
-		local factors=(
-			"00000000-0000-0000-0000-000000000000"
-			"00000000-0000-0000-0000-000000000000"
-			"MyDummyUser@dummy.com"
-			"MyDummyUser@dummy.com"
-			"000011"
-		)
-		local content=$(printf ",'%s'" "${factors[@]}" | cut -c2-)
-		echo "INSERT INTO user values ($content);" | sqlite3 "$storage" 2>/dev/null
 	fi
 
 }
@@ -121,7 +104,6 @@ main() {
 	printf "\033]0;%s\007" "aurhogen.sh"
 	ensure_accuracy
 	printf "\r\033[93m%s\033[00m" "LOADING, DO NOT UNPLUG YOUR KOBO AURA."
-	update_database
 	update_firmware
 	update_koreader
 	remove_unwanted
