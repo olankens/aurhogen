@@ -10,10 +10,10 @@
           "image-name" : "Generated.png",
           "name" : "Generated",
           "position" : {
-            "scale" : 0.35,
+            "scale" : 0.42,
             "translation-in-points" : [
-              0,
-              -90
+              1,
+              -101
             ]
           }
         }
